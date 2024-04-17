@@ -13,19 +13,6 @@
 
 }
 
-.desktop-mockup {
-    display: none;
-}
-
-.mobile-mockup{
-    position: absolute;
-    display: block;
-    opacity: 0.5;
-    margin: auto;
-    z-index: -10;
-    width: 100%;
-    display: none;
-}
 
 body {
    font-family: "Work Sans", sans-serif;
@@ -74,7 +61,6 @@ main {
 
 .accordion {
     display: flex;
-   /* gap: 35px;*/
 }
 
 
@@ -147,19 +133,6 @@ hr {
 
     .plus-minus {
         padding-right: 1em;
-    }
-
-    .mobile-mockup {
-        display: none;
-    }
-
-    .desktop-mockup{
-        display: block;
-        opacity: 0.5;
-        width: 100%;
-        margin: auto;
-        position: absolute;
-        display: none;
     }
 
     .mobile-background {
