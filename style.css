@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+
+}
+
+.desktop-mockup {
+    display: none;
+}
+
+.mobile-mockup{
+    position: absolute;
+    display: block;
+    opacity: 0.5;
+    margin: auto;
+    z-index: -10;
+    width: 100%;
+    display: none;
+}
+
+body {
+   font-family: "Work Sans", sans-serif;
+   font-size: 16px;
+   background-color: var(--Light-pink);
+}
+
+.mobile-background {
+    display: block;
+    width: 100%;
+    margin: auto;
+    
+}
+
+main {
+    padding: 1em 1em;
+    width: 21em;
+    left: 12%;
+    background-color: var(--White);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    top: 10%;
+    border-radius: 15px;
+}
+
+.container {
+    display: flex;
+    padding: 0.5em;
+    gap: 1em;
+    
+}
+
+.container h1 {
+    font-family: "Work Sans";
+}
+
+.accordion  h2 {
+    font-size: 0.95em;
+    font-weight: 800;
+    margin-top: -0.5em;
+    color: var(--Dark-purple);
+    padding-left: 1em;
+}
+
+.accordion {
+    display: flex;
+   /* gap: 35px;*/
+}
+
+
+
+.plus-minus {
+    position: absolute;
+    right: 1em;
+    cursor: pointer;
+}
+
+.plus {
+    top: -0.75em;
+}
+
+.paragraph {
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.85em;
+    font-weight: 700;
+    margin-top: 0.5em;
+    color: var(--Grayish-purple);
+    padding: 0.5em 1em;
+    line-height: 1.5;
+}
+
+hr {
+    border: 1px solid #d3d3d3;
+    margin: 1em 1.5em;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/**
+*?---------------SECOND ARTICLE-----------
+**/
+
+
+.desktop {
+    display: none;
+}
+
+.attribution {
+    margin-top: 95em;
+}
+
+
+/**
+*!----------DESKTOP----------
+**/
+@media screen and (min-width: 768px){
+
+    .desktop {
+        display: block;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+
+    main {
+      width: 32.5em;
+      position: absolute;
+      right: 50%;
+      left: 30%;
+      top: 30%;
+      
+    }
+
+    .plus-minus {
+        padding-right: 1em;
+    }
+
+    .mobile-mockup {
+        display: none;
+    }
+
+    .desktop-mockup{
+        display: block;
+        opacity: 0.5;
+        width: 100%;
+        margin: auto;
+        position: absolute;
+        display: none;
+    }
+
+    .mobile-background {
+        display: none;
+    }
+}
